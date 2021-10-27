@@ -1,0 +1,59 @@
+Task1:
+
+compiler :
+	translates the whole pgm
+	execution time is faster
+	Display all errors after compilation
+	lang uses compiler: c,c++,java
+	
+Interpreter :
+	translates a stmt of pgm at a time
+	execution time is slower
+	Displays all errors of each line one by one
+	lang uses interpreter : PHP,Ruby
+
+Task2:
+
+rules for creating variable in python
+	
+	must start with a letter or _
+	cannot start with a num
+	contains only alpha numeric characters and _
+	keywords cannot be used as variables
+
+Task3:
+
+difference between python 2 and python 3 version
+
+python 2:
+
+	print"stmt"
+	when dividing 2 integers the ans will be an integer value
+	ITERATIONS -> xrange()
+	Exceptions -> should be enclosed in notations
+
+python 3:
+
+	print("stmt")
+	when dividing 2 integers the ans will be a float value
+	ITERATIONS -> new range()
+	Exceptions -> should be enclosed in parenthesis
+
+
+Task4:
+
+Complex data type in python
+
+	a+bj
+	syntax:complex(real part+ imag. part)
+
+Task5:
+
+prime number     -> num which is divided by 1 or itself only
+factorial        -> multiply the given number with the lesser numbers below them till 1
+fibonacci series -> series of no.s in which each num is the sum of previous 2 no.s
+Armstrong number -> a number that is equal to the sum of cubes of its digits
+odd/even/positive/negative
+complex number   -> a num that contains real and imaginary parts
+palindrome       -> a word which is the same when it reads from forward as well as backward
+anagram          -> a word or sentence formed by rearranging the given word / sentence
