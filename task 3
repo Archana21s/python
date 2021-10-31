@@ -1,0 +1,61 @@
+October 30:
+
+Task1:
+
+why string is called as global datatype
+	
+	A variable declared outside of the function or in global scope is known as a global variable
+	
+
+Task2:
+
+create int ==> conver into float str bool
+create float ===> convert into int str bool
+create bool ===> convert into float int str
+create str ===> convert into int float bool
+
+  a=12
+  print(a,type(a))
+  print(float(a))
+  print(str(a))
+  print(bool(a))
+
+  b=2.5
+  print(b,type(b))
+  print(int(b))
+  print(str(b))
+  print(bool(b))
+
+  c=True
+  print(c,type(c))
+  print(int(c))
+  print(float(c))
+  print(str(c))
+
+  d="30"
+  print(d,type(d))
+  print(int(d))
+  print(float(d))
+  print(bool(d))
+
+output:
+
+12 <class 'int'>
+12.0
+12
+True
+
+2.5 <class 'float'>
+2
+2.5
+True
+
+True <class 'bool'>
+1
+1.0
+True
+
+30 <class 'str'>
+30
+30.0
+True
