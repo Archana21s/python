@@ -1,14 +1,5 @@
 October 30:
 
-Task1:
-
-why string is called as global datatype
-	
-	A variable declared outside of the function or in global scope is known as a global variable
-	
-
-Task2:
-
 create int ==> conver into float str bool
 create float ===> convert into int str bool
 create bool ===> convert into float int str
