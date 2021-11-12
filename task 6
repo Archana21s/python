@@ -1,0 +1,94 @@
+pblm 1:
+
+string=input("enter the string:")
+a=len(string)/2 +0.2
+print(a)
+b=(round(a))
+print(b)
+string =string[b-1::100]
+print(string)
+
+o/p:
+
+enter the string:hai
+1.7
+2
+a
+
+pblm 2:
+
+a=input("enter the 1st string :")
+b=input("enter the 2nd string :")
+Sizeofa=str(len(a))
+Sizeofb=str(len(b))
+print(a+""+Sizeofb+""+b+""+Sizeofa)
+
+o/p:
+enter the 1st string :hi
+enter the 2nd string:world
+hi5world2
+
+pblm 3:
+
+string=input("enter the string:")
+a=len(string)/2 +0.2
+print(a)
+b=(round(a))
+print(b)
+string= string[0:b-1]+ string[b-1::100].upper()+ string[b:100]
+print(string)
+
+o/p:
+
+enter the string:hello
+2.7
+3
+heLlo
+
+Hackerrank:
+
+#1 What's Your Name
+
+def print_full_name(first, last):
+    print("Hello"+" "+first+" "+last+"! You just delved into python.")
+
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
+    
+#2 swapcase
+
+def swap_case(s):
+    return s.swapcase()
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+    
+ #3 mutation
+
+def mutate_string(string, position, character):
+    return string[:position]+character+string[position+1:]
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
+    
+ #4 capitalize
+ 
+ def solve(s):
+ return s.title()
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
