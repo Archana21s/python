@@ -1,0 +1,134 @@
+#LIST:
+
+a=[]
+print(type(a))
+
+a=a+[5,6,7,8,10]
+print(a)
+
+b=[8,3,4,4,10,9,1,5,6,7,8,1]
+a.extend(b)
+print(a)
+
+print(a.count(8))
+
+print(a.index(10))
+
+print(sum(a)/2) #mean
+
+print(sum(a)+min(a)+max(a))
+
+a.sort()
+print(a)
+print("\nto find median:")
+mid=int(len(a)/2)  #median
+print(mid)
+print(a[mid])  #to find middle element
+
+
+print("\n",tuple(set(a)))#remove duplicates from list and give output in the format of tuple
+
+print("list to set:",set(a))  #print the list in set format
+print("list to tuple:",tuple(a))#print the list in tuple format
+
+
+#TUPLE:
+
+
+t1=(1,4,5,6,7,8)
+t2=(5,6,7,8,9)
+
+print("find the common elements")
+t3=tuple(set(t1) & set(t2))
+print(t3)
+
+t1=(t1+t2)
+k=tuple(set(t1)) 
+print("concatenation result witout duplicates:")
+print(k)
+print("find the index of element 9")
+print(k.index(9))
+
+print("multiply elements 3 times")
+k=k*3
+print(k) #multiply elements 3 times
+
+
+#SET:
+
+s1=set()
+s2=set()
+print(type(s1))
+print(type(s1))
+a={7,8,9,1,2,3,4,5,0}
+s1.update(a)
+print(s1)
+b={4,5,6,0}
+s2.update(b)
+print(s2)
+
+print(s2.issubset(s1))
+
+print(s2.isdisjoint(s1))
+
+s1.remove(8)# remove 
+print(s1)
+#s2.remove(8) #what is inference
+#print(s2)
+
+s1.discard(0)
+print(s1)
+s2.discard(0)
+print(s2)
+
+s1=s1.union(s2)
+print(s1)
+
+
+#DICTIONARY
+
+d={1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+print(d)
+print("keys in tuple format:",tuple(d.keys()))
+print(d[3][0][::2])#bobtn
+print(d[3][2][-1:-6:-1])#arbeg
+
+print(sum(d[2])/2)#average
+
+#task 7:
+
+
+a = [1,2,3,4,[100,101,102,"Computer_science"],200,203]
+
+
+print(a[4][3][9:])#science
+print(a[4][3][0:8])#computer
+
+
+#task 8:
+a = [1,2,3,4,[101,102,103,[201,202,[999]], 666, 777]]
+
+print(a[4][4])#666
+print(a[4][3][0])#201
+print(a[4][1])#102
+print(a[4][3][2][0])#999
+print(a[4][5])#777
+
+#task 9:
+Li1 = [2,3,"python","hello",4,5,0]
+
+
+print(Li1[3][2:4])#ll
+print(Li1[2][2:])#thon
+
+#task 10:
+Li1 = [1,2,3,4,5,[11,22,33,44,55,[111,222,333,444],6666,7777],7777]
+
+print(Li1[5][0])    #11
+print(Li1[5][6])    #6666
+print(Li1[5][-2])   #6666
+print(Li1[5][7])    #7777
+print(Li1[6])       #7777
+print(Li1[5][5][1]) #222
+print(Li1[-2][-1])  #7777
+print(Li1[2][2:4]   #?
