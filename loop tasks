@@ -1,0 +1,348 @@
+#Task1:
+
+[2,3,4,6,7,8,9,10,11]
+
+split odd numbers list / even numbers list
+
+the even numbers are [2,4,6,8,10] and its totally 5
+the odd numbers are [3,7,9,11] and its totally 4
+
+
+X=[2,3,4,6,7,8,9,10,11]
+even=[]
+odd=[]
+for x in X:
+  if int(x%2)==0:
+      even.append(x)
+  else:
+      odd.append(x)
+else:
+  print(even)
+  print(len(even))
+  print(odd)
+  print(len(odd))
+
+o/p:
+
+[2, 4, 6, 8, 10]
+5
+[3, 7, 9, 11]
+4
+
+#Task2:
+
+[-2,-3,4,5,6,8,9,0,0,1,2,3,5,-5,-6]
+Number of positive elemtns 9
+number of neg elements 4
+number of zeroes 2
+
+x=[-2,-3,4,5,6,8,9,0,0,1,2,3,5,-5,-6]
+a=0
+b=0
+c=0
+for i in x:
+    if(i>0):
+        a=a+1
+        
+    elif(i<0):
+        b=b+1
+        
+    else:
+        c=c+1
+
+print ("Number of positive elements",a)
+print ("Number of neg elements",b)
+print ("number of zeros",c)
+
+#Task3:
+
+["mom", "dad", "king", "python", "malayalam", "123321", "123"]
+Number of palindrome strs: 4
+Number of non palindromes : 3
+
+X=["mom", "dad", "king", "python", "malayalam", "123321", "123"]
+a=[]
+b=[]
+for x in X:
+  if x[::1]==x[::-1]:
+    a.append(x)
+  else:
+    b.append(x)
+else:
+    print(a)
+    print(len(a))
+    print(b)
+    print(len(b))
+
+o/p:
+
+['mom', 'dad', 'malayalam', '123321']
+4
+['king', 'python', '123']
+3
+
+#Task5:
+
+"""Get list of strings from user (collect number of elements)
+separate it in to two lists with vowles and non vowels 
+
+["hi","ggg","hello","ravi","bbbb","zzz","yyyy"]
+
+No of elements with vowel: 4
+No of elements without vowel: 3"""
+
+
+X=["hi","ggg","hello","ravi","bbbb","zzz","yyyy"]
+v=[]
+nv=[]
+for x in X:
+  for a in x:
+    if (a=='a' or a=='e' or a=='i'or a=='o'or a=='u'):
+     v.append(x)
+     #print(x,"+")   #for understanding purpose
+     break
+  else:
+    nv.append(x)
+    #print(x)  #for understanding purpose
+else:
+  print(v,len(v))
+  print(nv,len(nv))
+
+o/p:
+
+['hi', 'hello', 'ravi'] 3
+['ggg', 'bbbb', 'zzz', 'yyyy'] 4
+
+#Task6:
+
+#Get list of strings from user
+#separate it two list (with same first letter and last letter and othr)
+
+#["garg", "kohli", "rohitr", "ishan", "dhoni","dad"]
+
+#No of elements with same first letter and last letter: 3
+#Other List: 3
+
+
+X=["garg", "kohli", "rohitr", "ishan", "dhoni","dad","hello"]
+a=[]
+b=[]
+for x in X:
+  if x[0]==x[-1]:
+    a.append(x)
+  else:
+    b.append(x)
+else:
+  print(a,len(a))
+  print(b,len(b))
+
+o/p:
+['garg', 'rohitr', 'dad'] 3
+['kohli', 'ishan', 'dhoni', 'hello'] 4
+
+#Task7: 
+
+fibonacci series
+
+0,1,1,2,3,5,8,13,21,34,55,89,144
+
+a=int(input("enter the num:"))
+b=0
+c=1
+i=0
+print(b)
+print(c)
+for i in range(a-2):
+  
+  f=b+c 
+  b=c
+  c=f
+  print(f)
+i=i+1
+  
+o/p:
+enter the num:5
+0
+1
+1
+2
+3
+
+
+#Task8:
+
+No range function  
+Multiples of 10 between 12 to 100 using while loop
+Multiples of 8 between 120 to 20 using while loop
+Multiples of 5 between 9 to 40 using while loop
+Multiples of 8 between 300 to 200 using while loop
+
+
+i=12
+I=[]
+j=120
+J=[]
+k=9
+K=[]
+l=300
+L=[]
+
+while i>=12 and i<100:
+    if i%10==0:
+        I.append(i)
+    i=i+1
+print(I)
+
+while j<=120 and j>=20:
+    if j%8==0:
+        J.append(j)
+    j=j-1
+print(J)    
+
+while k>=9 and k<=40:
+    if k%5==0:
+        K.append(k)
+    k=k+1
+print(K)
+
+while l<=300 and l>200:
+    if l%8==0:
+        L.append(l)
+    l=l-1
+print(L)
+
+o/p:
+
+[20, 30, 40, 50, 60, 70, 80, 90]
+[120, 112, 104, 96, 88, 80, 72, 64, 56, 48, 40, 32, 24]
+[10, 15, 20, 25, 30, 35, 40]
+[296, 288, 280, 272, 264, 256, 248, 240, 232, 224, 216, 208]
+
+
+#Task9:
+#print all elements in the list using while loop
+
+1. calculate len
+2. decrement one by one in while
+
+a=[2,4,7,9,8]
+l=len(a)
+i=l-1
+while i>=0:
+    print(a[i])
+    i=i-1
+
+o/p:
+8
+9
+7
+4
+2
+
+
+
+"""Task10:
+
+check whether a number is armstrong or no
+Dont convert number to string """
+
+
+n = int(input("Enter a number: "))
+
+total= 0
+temp= n
+
+while temp > 0:
+
+   last_digit = temp % 10
+
+   total=total + last_digit ** 3
+
+   temp= temp // 10
+
+if n ==total :
+
+   print(n,"is an Armstrong number")
+
+else:
+
+   print(n,"is not an Armstrong number")
+
+
+"""Task11:
+
+#Get one dynamic list from user
+
+#10 [0,6,5,-3,4,5,3,-2,4,0]
+
+#count ==> no of zeros, no of positive values, no of negative values, no of odd numbers, number of even numbers
+#print the elements"""
+
+L=[0,6,5,-3,4,5,3,-2,4,0]  
+pos=0
+neg=0
+zero=0
+odd=0
+even=0
+for i in L:
+  if i>0 and i!=0:
+    pos=pos+1
+    if i%2==0:
+      even=even+1
+    else:
+      odd=odd+1
+  elif i<0:
+    neg=neg+1
+  else:
+    zero=zero+1
+else:
+  print("no of zeros",zero)
+  print("no of positive values",pos)
+  print("no of negative values",neg)
+  print("no of odd numbers",odd)
+  print("number of even numbers",even)
+
+
+		OR
+
+l=[]
+pos=0
+neg=0
+zero=0
+odd=0
+even=0
+for i in range(5):
+  a=int(input("enter num"))  #dynamic list
+  l.append(a)
+
+for i in l:
+   if i>0 and i!=0:
+    pos=pos+1
+    if i%2==0:
+      even=even+1
+    else:
+      odd=odd+1
+   elif i<0:
+     neg=neg+1
+   else:
+     zero=zero+1
+else:
+   print("no of zeros",zero)
+   print("no of positive values",pos)
+   print("no of negative values",neg)
+   print("no of odd numbers",odd)
+   print("number of even numbers",even)
+
+o/p:
+
+enter num5
+enter num-8
+enter num0
+enter num-3
+enter num0
+no of zeros 2
+no of positive values 1
+no of negative values 2
+no of odd numbers 1
+number of even numbers 0
+
