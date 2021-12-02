@@ -80,4 +80,32 @@ factorial of the number is : 120
 
 #6.Find fibonacci series using functions/recursive function
 
+def fibo(a):    
+   b=0
+   c=1
+   if a==0:
+       print("invalid num")
+   elif a==1:
+       print(a)
+   else:
+    print(b)
+    print(c)
+    for i in range(a-2):  
+      f=b+c 
+      b=c
+      c=f
+      print(f)
+    else:
+      return ""
+       
+num=int(input("enter the num:"))
+print(fibo(num))
 
+o/p:
+
+enter the num:5
+0
+1
+1
+2
+3
