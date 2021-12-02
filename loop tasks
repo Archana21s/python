@@ -278,32 +278,6 @@ else:
 #count ==> no of zeros, no of positive values, no of negative values, no of odd numbers, number of even numbers
 #print the elements"""
 
-L=[0,6,5,-3,4,5,3,-2,4,0]  
-pos=0
-neg=0
-zero=0
-odd=0
-even=0
-for i in L:
-  if i>0 and i!=0:
-    pos=pos+1
-    if i%2==0:
-      even=even+1
-    else:
-      odd=odd+1
-  elif i<0:
-    neg=neg+1
-  else:
-    zero=zero+1
-else:
-  print("no of zeros",zero)
-  print("no of positive values",pos)
-  print("no of negative values",neg)
-  print("no of odd numbers",odd)
-  print("number of even numbers",even)
-
-
-		OR
 
 l=[]
 pos=0
@@ -346,3 +320,210 @@ no of negative values 2
 no of odd numbers 1
 number of even numbers 0
 
+#Task12:
+
+#two numbers from user 2 25
+#2 
+#3  fizz
+#4
+#15
+#16
+#25
+
+#multiple of 3 ==> fizz
+#multiple of 5 ==> buzz
+#multiple of 15 ==> fizzbuzz
+#Others ===> No fizz and buzz
+#Including last number
+
+a=[2,3,25,30,40,80]
+for i in a:
+  if i%3==0:
+    print(i,"fizz")
+    if i%5==0:
+      print("buzz")
+    elif i%15==0:
+      print("fizzbuzz")
+  elif i%5==0:
+    print(i,"buzz")
+    if i%15==0:
+      print("fizzbuzz")
+  elif i%15==0:
+    print(i,"fizzbuzz")
+  else:
+    print(i,"no fizz & buzz")
+
+o/p:
+2 no fizz & buzz
+3 fizz
+25 buzz
+30 fizz
+buzz
+40 buzz
+80 buzz
+
+"""Task13:
+
+Factorial number"""
+
+n=int(input("enter the num:"))
+f=1
+while n>0:
+  f=f*n
+  n=n-1
+else:
+  print("factorial of the num is:",f)
+
+o/p:
+enter the num:5
+factorial of the num is:120
+
+"""Task14:
+
+Get one number from user
+Sum of digits
+
+325 ==> 10"""
+
+a=int(input("enter the num:"))
+total=0
+t=a
+while t>0:
+  l=t%10
+  total=total+l
+  t=t//10
+else:
+  print("total",total)
+
+o/p:
+enter the num:153
+total 9
+
+#Task15:
+
+#Product of digits
+#no need to convert to string
+
+a=int(input("enter the num:"))
+total=1
+t=a
+while t>0:
+  last=t%10
+  total=total*last
+  t=t//10
+else:
+  print("total",total)
+
+o/p:
+enter the num:153
+total 15
+
+
+#Task16:
+
+#multiples of a number 
+
+#Get one integer from the user
+#9 ==> 1,3,9
+#11 ==> 1,11
+#25 ==> 1,5,25
+#16 ===> 1,2,4,8,16
+
+
+n=int(input("enter the num:"))
+print("the factors are:")
+for i in range(1,n+1):
+        if n%i==0:
+         print(i)
+        i=i+1
+
+o/p:
+enter the num:35
+the factors are:
+1
+5
+7
+35
+
+#Task17:
+
+#Anagram ===> check whether given string is anagram or no
+
+#Two input strings
+
+
+a=input("Enter a: ")
+
+b=input("Enter b: ")
+
+c=0
+for i in a:
+    for j in b:
+        if i==j:
+
+            c=c+1
+           
+
+if c==len(a):
+
+    print(" anagram ")
+
+else:
+        print("not anagram ")
+
+o/p:
+Enter a: red
+Enter b: rde
+ anagram 
+
+
+#Task18:
+
+#Program to check a number is prime or no
+
+
+n=int(input("enter the num:"))
+for i in range(2,n):
+ if n%i==0:
+   print("it is not a prime num")
+   break
+else:
+   print("it is a prime num")
+
+o/p:
+enter the num:37
+it is a prime num
+enter the num:50
+it is not a prime num
+
+#Loops task: create a dictionary from user
+
+A=[]
+B=[]
+n=int(input("enter the num:"))
+for i in range(1,n+1):
+        a=input("enter the key")
+        A.append(a)
+        b=input("enter the value")
+        B.append(b)
+        continue
+else:
+        d=dict(zip(A,B))
+        print(d)
+        print(d.keys())
+        print(d.values())
+        print(d.items())
+        
+o/p:
+
+enter the num:3
+enter the key1
+enter the valueaaa
+enter the key2
+enter the valuebbb
+enter the keyjohn
+enter the value567
+{'1': 'aaa', '2': 'bbb', 'john': '567'}
+dict_keys(['1', '2', 'john'])
+dict_values(['aaa', 'bbb', '567'])
+dict_items([('1', 'aaa'), ('2', 'bbb'), ('john', '567')])
