@@ -1,0 +1,83 @@
+#1.check whether a number is prime or no using functions
+
+def prime_num(n):
+ for i in range(2,n):
+  if n%i==0:
+   return "it is not a prime num"
+   break
+ else:
+   return "it is  a prime num"
+num=int(input("enter the num:"))
+print(prime_num(num))
+
+o/p:
+enter the num:55
+it is not a prime num
+
+#2.check whether a number is odd or even using functions
+
+def func(n):
+    if n%2==0:
+        return "even num"
+    else:
+        return "odd num"
+    
+num=int(input("enter the num: "))
+print(func(num))
+
+o/p:
+enter the num: 88
+even num
+
+#3.check whether a number is positive or negative using functions
+
+def func(n):
+    if n>0:
+        return "+ive num"
+    else:
+        return "-ive num"
+    
+num=int(input("enter the num: "))
+print(func(num))
+
+o/p:
+enter the num: -7
+-ive num
+
+#4.check whether a string is palindrome or no using functions
+
+
+def palin(n):
+    if n==n[::-1]:
+        return "palindrome"
+    else:
+        return "not a palindrome"
+    
+a=input("enter the num: ")
+print(palin(a))
+
+o/p:
+enter the num: red
+not a palindrome
+
+#5.Find factorial of a number using rexursive function
+
+def f(n):
+ if n==0:
+     return 1
+ elif n==1:
+     return 1
+ else:
+     return (n * f(n-1))
+
+
+num=int(input("enter the num:"))
+print("factorial of the number is :",f(num))
+
+o/p:
+enter the num:5
+factorial of the number is : 120
+
+#6.Find fibonacci series using functions/recursive function
+
+
