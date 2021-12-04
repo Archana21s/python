@@ -86,7 +86,7 @@ def fibo(a):
    if a==0:
        print("invalid num")
    elif a==1:
-       print(a)
+       print(b)
    else:
     print(b)
     print(c)
