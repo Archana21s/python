@@ -1,1 +1,7 @@
+a=20
+b="hi"
+c=2
+print(a)
+print(b)
 
+print(float(c))
